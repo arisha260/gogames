@@ -1,0 +1,50 @@
+// базовые подключения
+@use "vars";
+@use "fonts";
+@use "settings";
+
+// подключения компонентов страницы
+
+*:focus{
+  outline: none;
+}
+
+body{
+  background-color: var(--cinderella-color);
+}
+
+.button{
+  font-family: var(--font-family);
+  padding: 13px 14px 14px 19px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  text-align: center;
+  color: var(--light-color);
+  background: linear-gradient(to right, #4499d9, #4499d9, #7367be);
+  background-position: right bottom;
+  background-size: 200% auto;
+  border-radius: 25px;
+  transition: all .2s ease-in-out;
+  @media (hover: hover) {
+    &:hover {
+      background: linear-gradient(to right, #4499d9, #4499d9, #4499d9);
+      -webkit-box-shadow: 0px 8px 8px 4px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow: 0px 8px 8px 4px rgba(34, 60, 80, 0.2);
+      box-shadow: 0px 8px 8px 4px rgba(34, 60, 80, 0.2);
+    }
+  }
+  &:active{
+    opacity: 0.7;
+  }
+}
+
+
+@keyframes border-line {
+  from{
+    width: 0;
+  }
+  to{
+
+  }
+}
