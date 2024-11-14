@@ -18,6 +18,7 @@
 <style scoped lang="scss">
   .header{
     position: absolute;
+    top: 0;
     padding: 10px 0;
     width: 100%;
     &__container {
