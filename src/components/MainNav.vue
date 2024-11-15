@@ -1,5 +1,5 @@
 <script setup>
-
+  import Button from "@/components/MainButton.vue";
 </script>
 
 <template>
@@ -10,13 +10,16 @@
       <li class="nav__item"><a href="#" class="nav__link">Prices</a></li>
       <li class="nav__item"><a href="#" class="nav__link">Rules</a></li>
     </ul>
+    <Button class="header__button" text="Get Started Now"/>
   </nav>
 </template>
 
 <style scoped lang="scss">
   .nav{
-    margin-left: auto;
+    display: flex;
+    align-items: center;
     &__list{
+      margin-right: 55px;
       display: flex;
       gap: 46px;
     }

@@ -1,9 +1,11 @@
 <script setup>
-
+  defineProps({
+      text: Text,
+  })
 </script>
 
 <template>
-  <a href="#" class="button">Get Started Now</a>
+  <a href="#" class="button">{{ text }}</a>
 </template>
 
 <style scoped lang="scss">

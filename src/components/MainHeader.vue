@@ -1,6 +1,5 @@
 <script setup>
   import Nav from './MainNav.vue'
-  import Button from "@/components/MainButton.vue";
 </script>
 
 <template>
@@ -10,7 +9,6 @@
         <img loading="lazy" src="/logo.png" alt="Site logo" width="280" height="78">
       </a>
       <Nav />
-      <Button class="header__button"/>
     </div>
   </header>
 </template>
@@ -23,8 +21,8 @@
     width: 100%;
     &__container {
       display: flex;
-      flex-direction: row;
       align-items: center;
+      justify-content: space-between;
     }
     &__button{
       margin-left: 55px;

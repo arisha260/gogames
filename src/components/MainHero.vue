@@ -10,7 +10,7 @@
         <h2 class="content__title title">Gaming Consoles</h2>
         <h3 class="content__subtitle subtitle">Try It, Rent It, <span style="color: var(--bismark-color)">Save $50!</span></h3>
         <p class="content__descr descr">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed.</p>
-        <Button class="content__button"></Button>
+        <Button class="content__button" text="Get Started Now"></Button>
         <div class="hero__icon">
           <IconHero />
         </div>
@@ -36,6 +36,8 @@
     padding-top: 145px;
     padding-bottom: 98px;
     background-image: url("/hero-bg.jpg");
+    overflow: hidden;
+
     &__icon{
       position: absolute;
       left: 50%;
